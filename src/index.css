@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+/* =====================================================
+   GLOBAL RESET
+===================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  background: #f5f7fb;
+  color: #111827;
+}
+
+/* =====================================================
+   PREVENT HORIZONTAL PAGE OVERFLOW
+===================================================== */
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* =====================================================
+   FORM ELEMENTS
+===================================================== */
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  max-width: 100%;
+}
+
+/* =====================================================
+   IMAGES
+===================================================== */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =====================================================
+   TABLES
+===================================================== */
+
+table {
+  border-collapse: collapse;
+}
+
+/* =====================================================
+   CUSTOM SCROLLBAR
+   Only affects elements that actually have overflow.
+===================================================== */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* =====================================================
+   HORIZONTAL SCROLL AREAS
+===================================================== */
+
+.overflow-x-auto {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* =====================================================
+   VERTICAL SCROLL AREAS
+===================================================== */
+
+.overflow-y-auto {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
+}
